@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --backgroundPage: #1D4362;
+    --colorHeaderForm: #0B3D91;
+    --colorBodyForm: rgba(255, 255, 255, 0.5);
+}
+.containerMain,
+.headerForm,
+.containerForm,
+.bodyForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerMain{
+    width: 100%;
+    height: 100vh;
+    background-color: #ececec;
+    position: relative;
+}
+.containerForm{
+    width: 550px;
+    height: 500px;
+    background-color: var(--colorBodyForm);
+
+    flex-direction: column;
+    border-radius: 10px;
+}
+.headerForm{
+    width: 100%;
+    height: 150px;
+    background-color: var(--colorHeaderForm);
+    position: relative;
+    border-bottom: 10px solid #FC3D21;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.image{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: -80px;
+}
+.title{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 90px;
+}
+.bodyForm{
+    width: 100%;
+    height: 350px;
+    background-color: var(--colorBodyForm);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.input{
+    width: 90%;
+    height: 40px;
+    position: relative;
+    margin: 5px 1px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 17px;
+    border: none;
+    border-radius: 3px;
+    border: 0.5px solid #1D4362;
+}
+.btnEnviar{
+    width: 30%;
+    height: 45px;
+    position: relative;
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+.btnEnviar:active{
+    background-color: var(--colorHeaderForm);
+    color: #FFFFFF;
+}
+.paragraph{
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 15px;
+    display: inline;
+}
+.link{
+    color: #FC3D21;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
